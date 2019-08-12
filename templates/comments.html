@@ -1,0 +1,15 @@
+<ul>
+  {% for c in cmts%}
+    <li>{{ c }}</li>
+  {% endfor %}
+</ul>
+
+{% macro mac_trial(msg)%}
+  <li>{{msg}}</li>
+{% endmacro %}
+
+<ol>
+  {% for c in cmts %}
+    {{ mac_trial(c) }}
+  {% endfor %}
+</ol>
